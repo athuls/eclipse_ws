@@ -1,0 +1,12 @@
+[Model]
+NAME=sevenbeambridge
+DESCRIPTION=Seven beam bridge
+# Database ID of structure
+# (update with actual ID after storing the structure in the database)
+STRUCT_ID=1
+DISPLACEMENT=SMALL
+STRAIN=SMALL
+# Size of reduced order model
+NR=10
+# Node force maximum for stress/strain mapping load cases
+FORCE_MAX=10.0

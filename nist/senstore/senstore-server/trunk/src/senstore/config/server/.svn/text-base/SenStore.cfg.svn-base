@@ -1,0 +1,7 @@
+PostgreSQL.hostname=localhost
+PostgreSQL.username=postgres
+PostgreSQL.password=secret
+SenStoreAdapter.Endpoints=default -p 10001
+# Uncomment next line when using SSH tunneling
+# SenStoreAdapter.PublishedEndpoints=default -h localhost -p 10001
+Logging.level=info

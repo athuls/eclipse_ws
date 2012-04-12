@@ -1,0 +1,177 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/modeldoc/mediawiki-extension/trunk/manager-src/javascript/dojo-release-1.4.2-src/dijit/nls
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+ar
+dir
+
+ca
+dir
+
+common.js
+file
+
+
+
+
+2011-05-17T18:47:30.000000Z
+2619c9f2efd8f71024ac00742a7f1bed
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+89
+
+cs
+dir
+
+da
+dir
+
+de
+dir
+
+el
+dir
+
+es
+dir
+
+fi
+dir
+
+fr
+dir
+
+he
+dir
+
+hu
+dir
+
+it
+dir
+
+ja
+dir
+
+ko
+dir
+
+loading.js
+file
+
+
+
+
+2011-05-17T18:47:30.000000Z
+3ab29c409af7111dfc5d249dccbb18b4
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+75
+
+nb
+dir
+
+nl
+dir
+
+pl
+dir
+
+pt
+dir
+
+pt-pt
+dir
+
+ru
+dir
+
+sk
+dir
+
+sl
+dir
+
+sv
+dir
+
+th
+dir
+
+tr
+dir
+
+zh
+dir
+
+zh-tw
+dir
+

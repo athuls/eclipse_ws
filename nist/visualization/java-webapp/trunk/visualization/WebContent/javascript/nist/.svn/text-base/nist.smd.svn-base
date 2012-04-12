@@ -1,0 +1,51 @@
+{
+	"SMDVersion": "2.0",
+	"id": "Nist",
+	"description": "Nist REST API",
+
+	transport: "GET",
+	envelope: "JSON",
+	additionalParameters: true,
+	target: "http://localhost:8080/NIST/",
+	parameters: [
+	],
+
+	services: {
+
+    "structures": {
+      "target": "StructuresREST",
+      parameters: [ ]
+    },
+    
+    "units": {
+      "target": "UnitsREST",
+      parameters: [ ]
+    },
+    
+    "channels": {
+      "target": "ChannelsREST",
+      envelope: "URL",
+      parameters: [ { name: "unitID", type: "string" } ]
+    },
+    
+    "data": {
+      "target": "DaqDataREST",
+      envelope: "URL",
+      parameters: [
+        { name: "channelID", type: "string" }
+      ]
+    },
+    
+    "sensors": {
+      "target": "SensorsREST",
+      parameters: [ ]
+    },
+    
+    "signals": {
+      "target": "SignalsREST",
+      envelope: "URL",
+      parameters: [ { name: "sensorID", type: "string" } ]
+    }
+
+	}
+}

@@ -1,0 +1,245 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/modeldoc/mediawiki-extension/trunk/manager-src/javascript/dojo-release-1.4.2-src/dojox/atom/widget/nls
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+FeedEntryEditor.js
+file
+
+
+
+
+2011-05-17T18:48:06.000000Z
+20825a65c1643ef1ec502b1289cc330c
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+76
+
+FeedEntryViewer.js
+file
+
+
+
+
+2011-05-17T18:48:05.000000Z
+2639f5c7419fd48a76d349fc9cb14307
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+204
+
+FeedViewerEntry.js
+file
+
+
+
+
+2011-05-17T18:48:05.000000Z
+67eecde299d50c6f02a961fb4c9ab48b
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+31
+
+PeopleEditor.js
+file
+
+
+
+
+2011-05-17T18:48:06.000000Z
+e8f693d4c0524598e89cce2ad4b02660
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+79
+
+ar
+dir
+
+ca
+dir
+
+cs
+dir
+
+da
+dir
+
+de
+dir
+
+el
+dir
+
+es
+dir
+
+fi
+dir
+
+fr
+dir
+
+he
+dir
+
+hu
+dir
+
+it
+dir
+
+ja
+dir
+
+ko
+dir
+
+nb
+dir
+
+nl
+dir
+
+pl
+dir
+
+pt
+dir
+
+pt-pt
+dir
+
+ru
+dir
+
+sk
+dir
+
+sl
+dir
+
+sv
+dir
+
+th
+dir
+
+tr
+dir
+
+zh
+dir
+
+zh-tw
+dir
+

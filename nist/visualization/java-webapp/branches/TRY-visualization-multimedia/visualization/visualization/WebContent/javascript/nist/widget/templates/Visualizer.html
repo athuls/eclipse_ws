@@ -1,0 +1,95 @@
+<div class="nist visualizer">
+
+<div dojoType="dijit.layout.BorderContainer" design="headline" gutters="true"
+    liveSplitters="false"
+    style="width: 1000px; height: 500px;
+        margin-left: auto; margin-right: auto; border: 3px solid black;
+        padding: 5px;">
+  <div dojoType="dijit.layout.ContentPane" splitter="false" region="top"
+      style="padding: 5px; height: 85px;">
+    <table width="100%">
+      <tr>
+        <td valign="center" style="width: 100px;">
+          <img src="images/NIST-logo.png"
+              style="float: left; margin-left: auto; margin-right: auto; height: 80px;" />
+        </td>
+        <td style="text-align: right; padding-right: 25px;">
+          <font style="font-size: 20pt; font-weight: bold;">
+            NIST - Real-Time Sensor Monitoring
+          </font>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div dojoType="dijit.layout.ContentPane" splitter="false" region="left"
+        style="width: 400px; padding: 10px;">
+    <div style="padding-left: 5px; padding-right: 5px;
+        background-color: #EEEEEE; border: thin dashed gray;">
+      <p><b>NIST Sensor Monitoring</b></p>
+      <p>First, select a Narada unit.  The "channels" box will then populate
+        with the appropriate channels.</p>
+      <p>Next, select the channel you want to monitor.  The "status" bar below
+        should update, and the acceleration chart to the right will begin
+        to populate, updating about every 10 seconds.</p>
+    </div>
+
+    <div style="margin-top: 5px; border: thin dashed gray; padding: 5px;">
+      <table>
+        <tr>
+          <th>Source:</th>
+          <td>
+            <i>cheetah:eecs.umich.edu:10001</i>
+          </td>
+        </tr>
+        
+        <tr>
+          <th>Structure:</th>
+          <td><span dojoAttachPoint="structureDisplay"><i>Loading structure...</i></span></td>
+        </tr>
+        
+        <tr>
+          <th>Narada Unit:</th>
+          <td>
+            <select dojoAttachPoint="unitSelect">
+              <option value="">--CHOOSE A UNIT--</option>
+            </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <th>Channel:</th>
+          <td>
+            <select dojoAttachPoint="channelSelect">
+              <option value="">--CHOOSE A CHANNEL--</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <center>
+    <input type="button" value="Show Demo" dojoAttachPoint="buttonShowDemo" />
+    </center>
+  </div>
+  
+  <div dojoType="dijit.layout.ContentPane" title="Acceleration Monitoring"
+        style="padding-left: 10px; padding-right: 10px;" region="center"
+        selected="true">
+    <h2>Acceleration</h2>
+    <b>Acc(g)</b>
+    <div dojoAttachPoint="accelerationChart" style="width: 550px; height: 240px;"></div>
+    <center><b>Time(sec)</b></center>
+    <center><input type="button" style="width: 100px;" value="Stop"
+        dojoAttachPoint="buttonStop" /></center>
+    <!-- 
+    <center><input type="button" style="width: 100px;" value="Back" disabled="true" />
+    <input type="button" style="width: 100px;" value="Forward" disabled="true" />
+    <input type="button" style="width: 100px;" value="Current" disabled="true" /></center> -->
+  </div>
+  
+  <div dojoType="dijit.layout.ContentPane" style="height: 10px;" region="bottom">
+    <b>Status:</b> <span dojoAttachPoint="displayStatus" style="color: blue;">No Current Activity</span>
+  </div>
+</div>
+
+</div>

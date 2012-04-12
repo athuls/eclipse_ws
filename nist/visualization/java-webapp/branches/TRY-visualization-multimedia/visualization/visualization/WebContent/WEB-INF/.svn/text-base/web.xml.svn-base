@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>NIST - Visualization Java</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/classes/spring/spring.xml</param-value>
+  </context-param>
+
+  <servlet>
+    <description></description>
+    <display-name>StructuresREST</display-name>
+    <servlet-name>StructuresREST</servlet-name>
+    <servlet-class>edu.umich.nist.rest.StructuresREST</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StructuresREST</servlet-name>
+    <url-pattern>/StructuresREST</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UnitsREST</display-name>
+    <servlet-name>UnitsREST</servlet-name>
+    <servlet-class>edu.umich.nist.rest.UnitsREST</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UnitsREST</servlet-name>
+    <url-pattern>/UnitsREST</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ChannelsREST</display-name>
+    <servlet-name>ChannelsREST</servlet-name>
+    <servlet-class>edu.umich.nist.rest.ChannelsREST</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChannelsREST</servlet-name>
+    <url-pattern>/ChannelsREST</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DaqDataREST</display-name>
+    <servlet-name>DaqDataREST</servlet-name>
+    <servlet-class>edu.umich.nist.rest.DaqDataREST</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DaqDataREST</servlet-name>
+    <url-pattern>/DaqDataREST</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SensorsREST</display-name>
+    <servlet-name>SensorsREST</servlet-name>
+    <servlet-class>edu.umich.nist.rest.SensorsREST</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SensorsREST</servlet-name>
+    <url-pattern>/SensorsREST</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SignalsREST</display-name>
+    <servlet-name>SignalsREST</servlet-name>
+    <servlet-class>edu.umich.nist.rest.SignalsREST</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignalsREST</servlet-name>
+    <url-pattern>/SignalsREST</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+</web-app>

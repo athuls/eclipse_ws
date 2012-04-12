@@ -1,0 +1,211 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/modeldoc/mediawiki-extension/trunk/manager-src/javascript/dojo-release-1.4.2-src/dijit/_editor/nls
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+FontChoice.js
+file
+
+
+
+
+2011-05-17T18:47:24.000000Z
+68f254bf4f0a5a0ebb8dfa3ed392f914
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+382
+
+LinkDialog.js
+file
+
+
+
+
+2011-05-17T18:47:24.000000Z
+91b9e4058ad6b78b8f244e1366a63433
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+273
+
+ar
+dir
+
+ca
+dir
+
+commands.js
+file
+
+
+
+
+2011-05-17T18:47:25.000000Z
+47adcf207184fde26f8c5632080df732
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1485
+
+cs
+dir
+
+da
+dir
+
+de
+dir
+
+el
+dir
+
+es
+dir
+
+fi
+dir
+
+fr
+dir
+
+he
+dir
+
+hu
+dir
+
+it
+dir
+
+ja
+dir
+
+ko
+dir
+
+nb
+dir
+
+nl
+dir
+
+pl
+dir
+
+pt
+dir
+
+pt-pt
+dir
+
+ru
+dir
+
+sk
+dir
+
+sl
+dir
+
+sv
+dir
+
+th
+dir
+
+tr
+dir
+
+zh
+dir
+
+zh-tw
+dir
+

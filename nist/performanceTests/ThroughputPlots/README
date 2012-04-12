@@ -1,0 +1,7 @@
+The excel file contains the results that were compiled from output files in the raw_data directory.
+
+From that, I exported a tab-separated file from sheet 2 and sheet 3. I added a column that contains 5000, since 5000 cyles/sec is our target, so that shows up on the plot.
+
+Gnuplot expects data to be plotted in columns. It plots one column against another. So, the data had to be recast in that format.
+
+The program plotdata.gnuplot contains the plotting code. It generates postscript files. Those postscript files were converted to JPEG via Preview program on a Mac. The JPEG files were manually cropped to remove whitespace and then imported in the annual presentation.

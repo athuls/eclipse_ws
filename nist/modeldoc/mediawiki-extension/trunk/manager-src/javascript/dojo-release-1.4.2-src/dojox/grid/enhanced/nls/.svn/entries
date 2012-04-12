@@ -1,0 +1,101 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/modeldoc/mediawiki-extension/trunk/manager-src/javascript/dojo-release-1.4.2-src/dojox/grid/enhanced/nls
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+EnhancedGrid.js
+file
+
+
+
+
+2011-05-17T18:48:00.000000Z
+f571a45bd74d88a07d5b334f2f9e2ca4
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+181
+
+cs
+dir
+
+de
+dir
+
+es
+dir
+
+fr
+dir
+
+hu
+dir
+
+it
+dir
+
+ja
+dir
+
+ko
+dir
+
+pl
+dir
+
+pt
+dir
+
+ru
+dir
+
+zh
+dir
+
+zh-tw
+dir
+

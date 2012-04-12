@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modeldoc>
+  <!-- <mediawiki url="http://localhost/nist/sym/api.php"
+      username="Jsteinbe" password="aoeu1234" /> -->
+  <mediawiki url="http://localhost/modeldoc/demo/api.php"
+      username="Jim" password="password" />
+</modeldoc>

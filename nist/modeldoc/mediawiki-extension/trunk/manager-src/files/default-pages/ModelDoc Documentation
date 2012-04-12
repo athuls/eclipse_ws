@@ -1,0 +1,34 @@
+<div style="background-color: #004583; border: 2px solid black; padding: 3px; float: left; margin: 15px 40px 15px 15px;">
+<div style="float: left; padding: 15px; border: thin solid gray; background-color: white;">
+<b>Using ModelDoc</b>
+<ul>
+  <li>[[ModelDoc::Documentation::Entities|Documenting Tables/Entities]]</li>
+  <li>[[ModelDoc::Documentation::Versioning|Versioning]]</li>
+  <li>[[ModelDoc::Documentation::Notifications|Getting Notifications]]</li>
+  <li>[[ModelDoc::Documentation::Recent Changes|Recent Changes]]</li>
+  <li>[[ModelDoc::Documentation::Example - File Uploading|Uploading Files]]
+    <ul><li>[http://www.mediawiki.org/wiki/Help:Images File Uploading Reference Page]</li></ul></li>
+  <li>[[ModelDoc::Documentation::Example - Syntax Highlighting|Documenting Code (Syntax Highlighting)]]
+    <ul><li>[http://www.mediawiki.org/wiki/Extension SyntaxHighlight_GeSHi Reference Page]</li></ul>
+  </li>
+  <li>[[ModelDoc::Documentation::Requests|Requests]]</li>
+</ul>
+
+<b>Tag Reference</b>
+<ul>
+    <li>[[ModelDoc::Tags::datasource-list|datasource-list]]</li>
+    <li>[[ModelDoc::Tags::datasource-info|datasource-info]]</li>
+    <li>[[ModelDoc::Tags::entity-list|entity-list]]</li>
+    <li>[[ModelDoc::Tags::entity-info|entity-info]]</li>
+    <li>[[ModelDoc::Tags::prevent-cache|prevent-cache]]</li>
+    <li>[[ModelDoc::Tags::refresh-entity|refresh-entity]]</li>
+    <li>[[ModelDoc::Tags::module-info|module-info]]</li>
+</ul>
+</div>
+</div>
+
+<h4>ModelDoc</h4>
+
+<p>ModelDoc, like WikiPedia, is web-application wiki-software based on the open source MediaWiki project.  It includes extensions for, currently, auto-generating and maintaining documentation for a live database.</p>
+
+<p>Use the links on the left for reference.</p>

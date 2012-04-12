@@ -1,0 +1,7 @@
+==== October 19, 2009 ====
+* Installed GeSHi Syntax Highlighting
+** [[ModelDoc::Documentation::Example - Syntax Highlighting]]
+** [http://www.mediawiki.org/wiki/Extension SyntaxHighlight_GeSHi Reference Page]
+* Enabled file-uploading
+** [[ModelDoc::Documentation::Example - File Uploading]]
+** [http://www.mediawiki.org/wiki/Help:Images File Uploading Reference Page]

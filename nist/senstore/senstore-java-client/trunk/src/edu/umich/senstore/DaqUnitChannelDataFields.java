@@ -1,0 +1,100 @@
+// **********************************************************************
+//
+// Copyright (c) 2003-2009 ZeroC, Inc. All rights reserved.
+//
+// This copy of Ice is licensed to you under the terms described in the
+// ICE_LICENSE file included in this distribution.
+//
+// **********************************************************************
+
+// Ice version 3.3.1
+
+package edu.umich.senstore;
+
+public final class DaqUnitChannelDataFields implements java.lang.Cloneable, java.io.Serializable
+{
+    public long id;
+
+    public long mChannel;
+
+    public DaqUnitChannelDataFields()
+    {
+    }
+
+    public DaqUnitChannelDataFields(long id, long mChannel)
+    {
+        this.id = id;
+        this.mChannel = mChannel;
+    }
+
+    public boolean
+    equals(java.lang.Object rhs)
+    {
+        if(this == rhs)
+        {
+            return true;
+        }
+        DaqUnitChannelDataFields _r = null;
+        try
+        {
+            _r = (DaqUnitChannelDataFields)rhs;
+        }
+        catch(ClassCastException ex)
+        {
+        }
+
+        if(_r != null)
+        {
+            if(id != _r.id)
+            {
+                return false;
+            }
+            if(mChannel != _r.mChannel)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    public int
+    hashCode()
+    {
+        int __h = 0;
+        __h = 5 * __h + (int)id;
+        __h = 5 * __h + (int)mChannel;
+        return __h;
+    }
+
+    public java.lang.Object
+    clone()
+    {
+        java.lang.Object o = null;
+        try
+        {
+            o = super.clone();
+        }
+        catch(CloneNotSupportedException ex)
+        {
+            assert false; // impossible
+        }
+        return o;
+    }
+
+    public void
+    __write(IceInternal.BasicStream __os)
+    {
+        __os.writeLong(id);
+        __os.writeLong(mChannel);
+    }
+
+    public void
+    __read(IceInternal.BasicStream __is)
+    {
+        id = __is.readLong();
+        mChannel = __is.readLong();
+    }
+}

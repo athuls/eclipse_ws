@@ -1,0 +1,7 @@
+include *.txt
+include setup-server.py
+recursive-include senstore/scshm *.py
+recursive-include senstore/scshm *.ice
+recursive-include senstore/install *.sql
+recursive-include senstore/config *.cfg
+prune senstore/scshm/tools

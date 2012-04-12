@@ -1,0 +1,31 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/performanceTests/NISTTestClient/src/edu
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-07-05T14:42:25.351729Z
+58
+aprakash
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+umich
+dir
+

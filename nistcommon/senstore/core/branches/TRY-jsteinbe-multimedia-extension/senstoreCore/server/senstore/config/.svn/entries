@@ -1,0 +1,34 @@
+10
+
+dir
+46
+svn+ssh://svnrepos@paris.eecs.umich.edu/nistrepos/nistcommon/senstore/core/branches/TRY-jsteinbe-multimedia-extension/senstoreCore/server/senstore/config
+svn+ssh://svnrepos@paris.eecs.umich.edu/nistrepos/nistcommon
+
+
+
+2011-01-10T14:56:18.832327Z
+31
+jsteinbe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df580e07-4efc-472b-9e5a-37e840e95235
+
+client
+dir
+
+server
+dir
+

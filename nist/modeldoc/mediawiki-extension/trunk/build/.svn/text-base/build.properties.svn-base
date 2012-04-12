@@ -1,0 +1,2 @@
+# The absolute path to your site's root directory
+site.filepath = /opt/local/apache2/htdocs/modeldoc-admin

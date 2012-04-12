@@ -1,0 +1,31 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/modeldoc/paper_refactoring/trunk/tmp
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-06-15T17:19:18.170659Z
+37
+ddevec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+src
+dir
+

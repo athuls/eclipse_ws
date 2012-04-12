@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Jun 26, 2010 10:30:00 PM                                                        
+
+     SenStore Java Client                       
+     ====================================================================== -->
+<project name="SenStore - Java Client" default="Generate JAR" basedir="..">
+
+  <description>Build file for the Meez Query System Component</description>
+
+  <property name="publish.dir" value="publish" />
+  <property name="src.dir" value="src" />
+  <property name="bin.dir" value="bin" />
+	<property name="dep.dir" value="dependencies" />
+  
+  <property name="senstore.version" value="0.1.2-multimedia-extension" />
+	<property name="ice.version" value="3.3.1" />
+	<property name="slice2java.executable" value="/opt/local/bin/slice2java" />
+
+  <!-- ================================= 
+        target: Generate Client Files
+       ================================= -->
+  <target name="Generate Client Files"
+      description="Generate the client files">
+  	<property name="ice-source.dir" value="${basedir}/${src.dir}" />
+  	<property name="ice.file" value="${basedir}/${dep.dir}/SenStore-${senstore.version}.ice" />
+  	
+    <delete dir="${src.dir}/edu" />
+    <mkdir dir="${ice-source.dir}" />
+
+  	<echo message="Generating files in: ${ice-source.dir}" />
+  	<echo message="Using ICE file: ${ice.file}" />
+    <exec executable="${slice2java.executable}">
+    	<arg line="--output-dir '${ice-source.dir}' ${ice.file}" />
+    </exec>
+  </target>
+
+  <!-- ================================= 
+        target: Generate JAR              
+       ================================= -->
+  <target name="Generate JAR"
+      description="Create a SenStore client jar">
+  	<delete>
+    	<fileset dir="${publish.dir}">
+    	    <include name="*"/>
+    	</fileset>
+    </delete>
+
+    <mkdir dir="${publish.dir}" />
+
+    <tstamp><format property="TODAY" pattern="yyyy-MM-dd HH:mm:ss" /></tstamp>
+
+    <jar destfile="${publish.dir}/nist_senstore_v${senstore.version}.jar"
+        basedir="${bin.dir}"
+        includes="**/*.class">
+      <manifest>
+        <attribute name="Built-By" value="NIST" />
+        <attribute name="Built-Date" value="${TODAY}" />
+      </manifest>
+    </jar>
+  	
+  	<copyfile dest="${publish.dir}/Ice-${ice.version}.jar"
+  		  src="${dep.dir}/Ice-${ice.version}.jar" />
+  </target>
+</project>

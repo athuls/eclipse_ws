@@ -1,0 +1,349 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/modeldoc/mediawiki-extension/trunk/manager-src/javascript/dojo-release-1.4.2-src/dojo/cldr/nls
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+ar
+dir
+
+ca
+dir
+
+cs
+dir
+
+currency.js
+file
+
+
+
+
+2011-05-17T18:48:13.000000Z
+752b72d1e63bbd96de51b9571c02c411
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+260
+
+da
+dir
+
+de
+dir
+
+de-de
+dir
+
+el
+dir
+
+en
+dir
+
+en-au
+dir
+
+en-ca
+dir
+
+en-gb
+dir
+
+en-us
+dir
+
+es
+dir
+
+es-es
+dir
+
+fi
+dir
+
+fr
+dir
+
+gregorian.js
+file
+
+
+
+
+2011-05-17T18:48:12.000000Z
+9fe0c7811fa5df1e9ddddf32c80f31ae
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3919
+
+he
+dir
+
+hebrew.js
+file
+
+
+
+
+2011-05-17T18:48:12.000000Z
+4210376353f7036b4aef9e41d55d151d
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3841
+
+hu
+dir
+
+islamic-civil.js
+file
+
+
+
+
+2011-05-17T18:48:13.000000Z
+3be81e0a48d83d0271a1101301b89bb8
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5308
+
+islamic.js
+file
+
+
+
+
+2011-05-17T18:48:12.000000Z
+6f4d9aa82d8aa130b230733cdda959b8
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3939
+
+it
+dir
+
+it-it
+dir
+
+ja
+dir
+
+ja-jp
+dir
+
+ko
+dir
+
+ko-kr
+dir
+
+nb
+dir
+
+nl
+dir
+
+number.js
+file
+
+
+
+
+2011-05-17T18:48:13.000000Z
+fc33990f816eb1c8258774dc11ac447d
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+750
+
+pl
+dir
+
+pt
+dir
+
+pt-br
+dir
+
+pt-pt
+dir
+
+ru
+dir
+
+sk
+dir
+
+sl
+dir
+
+sv
+dir
+
+th
+dir
+
+tr
+dir
+
+zh
+dir
+
+zh-cn
+dir
+
+zh-tw
+dir
+

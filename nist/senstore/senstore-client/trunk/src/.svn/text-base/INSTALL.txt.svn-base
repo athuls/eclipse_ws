@@ -1,0 +1,62 @@
+SenStore Structural Health Monitoring System
+See LICENSE.txt for licensing terms.
+
+Prerequisites:
+- ZeroC Ice 3.3.1 or later (make sure to use a version that includes
+   Python bindings)
+- Python 2.6.x
+- PostgreSQL 8.4 or later
+- PyGreSQL 4.0 or later, a Python interface to PostgreSQL, using the
+   standard Python db-api.
+- NumPy 1.3.x
+- PyTables 2.1 or later
+
+NOTE 1: in Windows bzip2 in PyTables may conflict with the
+bzip2 in Ice.  SC Solutions can provide a patched Windows
+installer for PyTables that does not have this conflict.
+
+Installing prerequisites:
+- Install Python 2.6, NumPy and PyTables.
+- Install ZeroC Ice.
+- Add the ZeroC Ice bin directory to the PATH environment variable
+- Add the ZeroC Ice Python directory to the PYTHONPATH environment variable
+- Install the PostgreSQL database server.
+- Install PyGreSQL.
+- (Optional) Install PgAdmin, a nice GUI to browse/edit the
+   PostgreSQL database.
+- Add the PostgreSQL bin directory to the PATH environment
+   variable, so PyGreSQL can find and load the PostgreSQL DLLs it
+   needs.
+
+NOTE 2: the distributed Python source packages do not *need* to be
+installed using the included setup-*.py scripts.  The easiest way
+to use them is to unpack the zip files, and run the corresponding
+scripts directly from the created directories.
+
+Preparing the server:
+- Unpack SenStoreServer-x.x.x.zip
+- Change to directory SenStoreServer-x.x.x\senstore
+- Edit config\server\SenStore.cfg if needed
+  Note that the PostgreSQL server must be configured to allow TCP
+  access of the provided username with administrator priv.
+- Run python scshm-create.py to create the databases (only once)
+- Run python scshm-start.py to start the SenStore server
+
+WARNING: scshm-create.py will OVERWRITE the database if it already exists.
+
+Using the client:
+- Unpack SenStoreClient-x.x.x.zip
+- Change to directory SenStoreClient-x.x.x\senstore
+- Edit config\client\SenStore.cfg if needed
+- See sevenbeambridge.py for an example of interacting
+  with the server
+
+Using the extras:
+- Unpack SenStoreExtras-x.x.x.zip
+- The database definition parser can be found in
+  senstore\buildtools\dbdef.py
+- The database definition can be found in senstore\doc\SenStore.dbd
+- An XML version of the database definition can be found in
+  senstore\doc\SenStore.xml
+- Documentation can be viewed by opening senstore\doc\html\index.html
+  in a browser

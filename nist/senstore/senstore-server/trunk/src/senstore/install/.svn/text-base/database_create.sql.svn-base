@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS senstore;
+CREATE DATABASE senstore;

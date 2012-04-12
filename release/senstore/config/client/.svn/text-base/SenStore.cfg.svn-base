@@ -1,0 +1,3 @@
+[Logging]
+# Log levels are: debug, info, warning, error and critical
+LEVEL=INFO

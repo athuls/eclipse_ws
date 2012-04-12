@@ -1,0 +1,31 @@
+10
+
+dir
+31
+svn+ssh://svnrepos@paris.eecs.umich.edu/nistrepos/nistcommon/senstore/core/trunk
+svn+ssh://svnrepos@paris.eecs.umich.edu/nistrepos/nistcommon
+
+
+
+2011-01-05T22:43:26.213192Z
+24
+jsteinbe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df580e07-4efc-472b-9e5a-37e840e95235
+
+senstoreCore
+dir
+

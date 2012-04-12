@@ -1,0 +1,31 @@
+10
+
+dir
+46
+svn+ssh://svnrepos@paris.eecs.umich.edu/nistrepos/nistcommon/senstore/core/tags/REL-0.2.1/senstoreCore/release/senstore/doc/buildtools
+svn+ssh://svnrepos@paris.eecs.umich.edu/nistrepos/nistcommon
+
+
+
+2011-05-10T22:47:32.471920Z
+44
+gwen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df580e07-4efc-472b-9e5a-37e840e95235
+
+html
+dir
+

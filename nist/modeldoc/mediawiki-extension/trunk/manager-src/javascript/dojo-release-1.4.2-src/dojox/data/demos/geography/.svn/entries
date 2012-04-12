@@ -1,0 +1,113 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/modeldoc/mediawiki-extension/trunk/manager-src/javascript/dojo-release-1.4.2-src/dojox/data/demos/geography
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+Argentina
+dir
+
+Brazil
+dir
+
+Canada
+dir
+
+China
+dir
+
+Commonwealth of Australia
+dir
+
+Egypt
+dir
+
+France
+dir
+
+Germany
+dir
+
+India
+dir
+
+Italy
+dir
+
+Kenya
+dir
+
+Mexico
+dir
+
+Mongolia
+dir
+
+Russia
+dir
+
+Spain
+dir
+
+Sudan
+dir
+
+United States of America
+dir
+
+root.json
+file
+
+
+
+
+2011-05-17T18:47:52.000000Z
+d7790a3bc06b67442425a8a472be35a5
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1843
+

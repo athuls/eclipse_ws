@@ -1,0 +1,5 @@
+include *.txt
+include setup-extras.py
+recursive-include senstore/buildtools *.py
+recursive-include senstore/doc *.xml *.dbd *.html *.css *.png *.gif *.map
+prune senstore/scshm/tools

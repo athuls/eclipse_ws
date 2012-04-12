@@ -1,0 +1,19 @@
+<area shape="rect" id="node1" href="$classbuildtools_1_1dbdef_1_1_vars.html" title="Dictionary class for holding variables." alt="" coords="7,334,156,362">
+<area shape="rect" id="node3" href="$classbuildtools_1_1dbdef_1_1_database_vars.html" title="Variable data set for the storing database definition." alt="" coords="205,309,411,337">
+<area shape="rect" id="node5" href="$classbuildtools_1_1dbdef_1_1_syntax_object.html" title="Abstract base class for a syntax object." alt="" coords="207,359,409,387">
+<area shape="rect" id="node7" href="$classbuildtools_1_1dbdef_1_1_array_def.html" title="Array definition syntax element object class." alt="" coords="483,5,656,33">
+<area shape="rect" id="node11" href="$classbuildtools_1_1dbdef_1_1_base_class_name.html" title="Base class name syntax element object class." alt="" coords="460,55,679,83">
+<area shape="rect" id="node13" href="$classbuildtools_1_1dbdef_1_1_class_def.html" title="Class definition syntax element object class." alt="" coords="481,106,657,134">
+<area shape="rect" id="node15" href="$classbuildtools_1_1dbdef_1_1_class_name.html" title="Class name syntax element object class." alt="" coords="475,157,664,185">
+<area shape="rect" id="node17" href="$classbuildtools_1_1dbdef_1_1_comment.html" title="Comment syntax element object class." alt="" coords="480,207,659,235">
+<area shape="rect" id="node19" href="$classbuildtools_1_1dbdef_1_1_doc_string.html" title="Document string syntax element object class." alt="" coords="480,258,659,286">
+<area shape="rect" id="node21" href="$classbuildtools_1_1dbdef_1_1_enum_def.html" title="Enumeration definition syntax element object class." alt="" coords="481,309,657,337">
+<area shape="rect" id="node23" href="$classbuildtools_1_1dbdef_1_1_enum_elem.html" title="Enumeration element definition syntax element object class." alt="" coords="476,359,663,387">
+<area shape="rect" id="node25" href="$classbuildtools_1_1dbdef_1_1_enum_name.html" title="Enumeration name syntax element object class." alt="" coords="473,410,665,438">
+<area shape="rect" id="node27" href="$classbuildtools_1_1dbdef_1_1_ref_def.html" title="Object reference definition syntax element object class." alt="" coords="489,461,649,489">
+<area shape="rect" id="node29" href="$classbuildtools_1_1dbdef_1_1_ref_name.html" title="Object reference name syntax element object class." alt="" coords="481,511,657,539">
+<area shape="rect" id="node31" href="$classbuildtools_1_1dbdef_1_1_tag_name.html" title="Tag name syntax element object class." alt="" coords="480,562,659,590">
+<area shape="rect" id="node33" href="$classbuildtools_1_1dbdef_1_1_type_name.html" title="Variable or reference type syntax element object class." alt="" coords="477,613,661,641">
+<area shape="rect" id="node35" href="$classbuildtools_1_1dbdef_1_1_var_def.html" title="Variable definition syntax element object class." alt="" coords="488,663,651,691">
+<area shape="rect" id="node37" href="$classbuildtools_1_1dbdef_1_1_var_name.html" title="Variable name syntax element object class." alt="" coords="481,714,657,742">
+<area shape="rect" id="node9" href="$classbuildtools_1_1dbdef_1_1_signal_def.html" title="Signal definition syntax element object class." alt="" coords="728,5,907,33">

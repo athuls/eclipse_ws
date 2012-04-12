@@ -1,0 +1,71 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/trunk/Reports/Feb-16-09-networks-workshop/panel.key
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2009-07-17T14:48:25.372840Z
+3
+aprakash
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+Contents
+dir
+
+QuickLook
+dir
+
+index.apxl.gz
+file
+
+
+
+
+2011-05-17T18:46:43.000000Z
+8d6a1d8d9f265d480e7d917901d39c55
+2009-07-17T14:48:25.372840Z
+3
+aprakash
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+142738
+
+thumbs
+dir
+

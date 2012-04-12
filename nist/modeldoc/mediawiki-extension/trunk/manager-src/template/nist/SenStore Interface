@@ -1,0 +1,45 @@
+== Introduction ==
+The object-oriented database interface provides a high-level interface to all the centrally stored data.
+
+There are three types of objects:
+* simple objects
+* multi-dimensional array objects
+* multi-dimensional signal objects
+
+All these objects can have ''fields'', which are simple data members, such as scalar numerical values, strings, and references to other objects.
+
+The interface is implemented using the following principles:
+* Fields are assembled into a single object, which can be send to or retrieved from the server as single objects, or as a list of objects.  This avoids having to perform remote calls when accessing each field separately.
+* Array and signal data (excluding the fields) is accessed through a proxy, and can be accessed in chunks.  This allows having very large datasets.  Each remote call can only transfer a limited amount of data, because of message size restrictions.
+* References to other objects can be retrieved by object ID through the respective field, or by proxy through the  referring object proxy.
+
+== Connecting to the server ==
+
+A database client can connect to the server by using the Ice utilities.  In Python there is a convenience class that takes care of the necessary steps:
+<syntaxhighlight lang="python">
+from SenStoreClient import SenStoreClient, SenStore
+client = SenStoreClient()
+mngr = client.getManager()
+</syntaxhighlight>
+We may provide a similar class for other languages if needed.
+
+== Creating an object ==
+Objects are added to the database by creating a local data object that defines the object fields, and
+sending that to the server.  Suppose that the database schema defines an object 'Node', that has three fields: X,Y,Z.
+<syntaxhighlight lang="python">
+node = SenStore.NodeFields()
+node.mX = 1.0
+node.mY = 2.0
+node.mZ = 3.0
+node.id = mngr.addNode(node)
+</syntaxhighlight>
+Note that the call to the database server returns the newly assigned object ID, which can be stored in the object for convenience.  Also note that the fields are prefixed by 'm', and the object ID is not prefixed.
+
+== Updating an object ==
+To update an object, first retrieve the proxy to that object, get the current field values, change them, and send back the changes.
+<syntaxhighlight lang="python">
+nodePrx = mngr.getNode(node.id)
+node.mX = 4.0
+nodePrx.setFields(node, ['X'])
+</syntaxhighlight>
+Note that by giving a non-empty list of field names, only those fields will be changed in the database.

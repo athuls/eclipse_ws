@@ -1,0 +1,10 @@
+#Write throughput				
+#Batch factor vs. # of 20-byte sensor data writes/second for different RT latencies
+#Batch factor	0.3ms RT	10ms RT	50ms RT	100ms RT    Target
+1	200	66.5	18	9.5	5000
+10	2500	666.5	188.5	95	5000
+100	25000	7150	1850	950	5000
+1000	125000	34500	9350	4750	5000
+10000	263150	128200	36100	22750	5000
+50000	568150	200000	56100	29600	5000
+

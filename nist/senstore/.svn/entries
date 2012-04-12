@@ -1,0 +1,40 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/senstore
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-09-17T03:15:25.676471Z
+68
+jsteinbe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+senstore-client
+dir
+
+senstore-extras
+dir
+
+senstore-java-client
+dir
+
+senstore-server
+dir
+

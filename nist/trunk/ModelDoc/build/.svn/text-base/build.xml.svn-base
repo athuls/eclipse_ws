@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Dec 30, 2009 8:52:28 PM                                                        
+
+     project    
+     description
+                   
+     bipsterite                                                                
+     ====================================================================== -->
+<project name="project" default="default" basedir="..">
+    <description>
+            description
+    </description>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="default" description="description">
+    	<copy todir="/opt/local/apache2/htdocs/dev/mediawiki-1.15.1/extensions/modeldoc">
+    		<fileset dir="src" />
+    	</copy>
+    </target>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>BoundingBox</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>geodesy</name>
+			<type>2</type>
+			<location>/home/athuls89/workspace/geodesy/geodesy</location>
+		</link>
+		<link>
+			<name>weibull</name>
+			<type>2</type>
+			<location>/home/athuls89/Desktop/gsra/weibull</location>
+		</link>
+	</linkedResources>
+</projectDescription>

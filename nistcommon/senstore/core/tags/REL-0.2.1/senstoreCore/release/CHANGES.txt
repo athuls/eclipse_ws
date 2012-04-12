@@ -1,0 +1,16 @@
+SenStore change log.
+
+0.2.1 [2011-05-10] Internal release.
+ - Added access to signal data by index.
+ - Refactored finding time stamps in signal data.
+ - Refactored Narada examples.
+ - Renamed 'end' to 'stop' in all slice definitions, to be consistent with Python slices.
+ - HDF5 files are now using compression.
+ - Added logging of exceptions occurring in the Ice interface implementation.
+
+0.2.0 [2011-01-27] Internal release.
+ - Fixed bug in handling null references in PostgreSQL database access.
+
+0.1.2 [2010-09-07] Stable release.  Deployed to NCB server.
+
+0.1.1 [2010-06-18] First stable release.  Deployed to NCB server.

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Jun 26, 2010 10:30:00 PM                                                        
+
+     SenStore Java Client                       
+     ====================================================================== -->
+<project name="SenStore - Java Client" default="Generate JAR" basedir="..">
+
+  <description>Build file for the Meez Query System Component</description>
+
+  <property name="publish.dir" value="publish" />
+  <property name="src.dir" value="src" />
+  <property name="bin.dir" value="bin" />
+  
+  <property name="senstore.version" value="0.1.1" />
+
+  <!-- ================================= 
+        target: Generate JAR              
+       ================================= -->
+  <target name="Generate JAR"
+      description="Create a SenStore client jar">
+    
+    <delete dir="${publish.dir}" />
+    <mkdir dir="${publish.dir}" />
+    
+    <tstamp><format property="TODAY" pattern="yyyy-MM-dd HH:mm:ss" /></tstamp>
+
+    <jar destfile="${publish.dir}/nist_senstore_v${senstore.version}.jar"
+        basedir="${bin.dir}"
+        includes="**/*.class">
+      <manifest>
+        <attribute name="Built-By" value="NIST" />
+        <attribute name="Built-Date" value="${TODAY}" />
+      </manifest>
+    </jar>
+  </target>
+
+</project>

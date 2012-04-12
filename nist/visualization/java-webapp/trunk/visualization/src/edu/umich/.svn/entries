@@ -1,0 +1,31 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/visualization/java-webapp/trunk/visualization/src/edu/umich
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2011-01-20T07:07:24.938248Z
+72
+jsteinbe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+nist
+dir
+

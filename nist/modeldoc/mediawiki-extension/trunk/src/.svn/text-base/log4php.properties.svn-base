@@ -1,0 +1,18 @@
+log4php.appender.default = LoggerAppenderEcho
+log4php.appender.default.layout = LoggerLayoutSimple
+log4php.appender.default.threshold = DEBUG
+
+log4php.appender.email = LoggerAppenderMail
+log4php.appender.email.layout = LoggerLayoutTTCC
+log4php.appender.email.from = jsteinbe@eecs.umich.edu
+log4php.appender.email.to = jsteinbe.eecs@gmail.com
+log4php.appender.email.subject = ModelDoc Error
+log4php.appender.email.threshold = ERROR
+
+log4php.appender.dailyfile = LoggerAppenderDailyFile
+log4php.appender.dailyfile.layout = LoggerLayoutTTCC
+log4php.appender.dailyfile.datePattern = Ymd
+log4php.appender.dailyfile.file = logs/modeldoc_%s.log
+log4php.appender.dailyfile.threshold = INFO
+
+log4php.rootLogger = DEBUG, default, email, dailyfile

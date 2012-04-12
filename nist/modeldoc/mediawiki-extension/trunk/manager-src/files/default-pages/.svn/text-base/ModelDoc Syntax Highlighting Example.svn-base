@@ -1,0 +1,19 @@
+=== PHP ===
+
+<source lang="php">
+<?php
+    $v = "string";    // sample initialization
+?>
+html text
+<?
+    echo $v;         // end of php code
+?>
+</source>
+
+=== Java ===
+
+<source lang="java">
+public interface SensorDataProcessor {
+  public void processSensor(long sensorID, java.util.Date timestamp, int[] data);
+}
+</source>

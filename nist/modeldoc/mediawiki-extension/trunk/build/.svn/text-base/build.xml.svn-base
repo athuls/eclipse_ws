@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Dec 30, 2009 8:52:28 PM                                                        
+
+     project    
+     description
+                   
+     bipsterite                                                                
+     ====================================================================== -->
+<project name="ModelDoc" basedir="..">
+  <description>
+          description
+  </description>
+
+  <!-- ================================= 
+        target: default              
+       ================================= -->
+  <target name="Deploy Extension" description="description">
+  	<copy todir="/opt/local/apache2/htdocs/nist/sym/extensions/modeldoc">
+  		<fileset dir="src">
+  	    <exclude name=".svn"/>
+  	  </fileset>
+  	</copy>
+  </target>
+
+  <!-- ================================= 
+        target: default              
+       ================================= -->
+  <target name="Deploy Admin Application" description="description">
+    <copy todir="/opt/local/apache2/htdocs/modeldoc-admin">
+      <fileset dir="manager-src">
+        <exclude name=".svn"/>
+      </fileset>
+    </copy>
+  </target>
+	
+	<target name="Redeploy Admin Application" description="description">
+		<delete includeemptydirs="true">
+      <fileset dir="/opt/local/apache2/htdocs/modeldoc-admin" includes="**/*"/>
+    </delete>
+    <copy todir="/opt/local/apache2/htdocs/modeldoc-admin">
+      <fileset dir="manager-src">
+        <exclude name=".svn"/>
+      </fileset>
+    </copy>
+  </target>
+</project>

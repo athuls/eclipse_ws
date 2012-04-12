@@ -1,0 +1,7 @@
+* <del>Better formatting for the meta-data tables</del>
+* <del>Incorporate constraints into the tables themselves (e.g. if a column is a foreign key to another table, the column itself should be the link)</del>
+* <del>Editable documentation-templates on the table-pages</del>
+* <del>From Gwen: source code formatting</del>
+** Included 2009.10.19: [[Example: Syntax Highlighting]]
+* <del>From Gwen: file-uploading<del>
+** Included 2009.10.19: [[Example: File Uploading]]

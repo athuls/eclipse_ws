@@ -1,0 +1,140 @@
+10
+
+dir
+77
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist/modeldoc/mediawiki-extension/trunk/manager-src/javascript/dojo-release-1.4.2-src/dojo/tests/nls
+svn+ssh://svnrepos@paris.eecs.umich.edu/nist
+
+
+
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1bab35e5-b524-4312-b144-c229b63fb4e7
+
+ar
+dir
+
+cs
+dir
+
+de
+dir
+
+el
+dir
+
+en
+dir
+
+en-au
+dir
+
+en-us-hawaii
+dir
+
+en-us-new_york-brooklyn
+dir
+
+en-us-texas
+dir
+
+es
+dir
+
+fa
+dir
+
+fr
+dir
+
+he
+dir
+
+hi
+dir
+
+it
+dir
+
+ja
+dir
+
+ko
+dir
+
+pl
+dir
+
+pt
+dir
+
+ru
+dir
+
+salutations.js
+file
+
+
+
+
+2011-05-17T18:48:14.000000Z
+2d4c8665a2af4a19dd885c48096e7c4b
+2010-06-15T18:16:37.211052Z
+45
+ddevec
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+671
+
+sw
+dir
+
+th
+dir
+
+tr
+dir
+
+yi
+dir
+
+zh-cn
+dir
+
+zh-tw
+dir
+

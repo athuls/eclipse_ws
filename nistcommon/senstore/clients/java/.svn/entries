@@ -1,0 +1,37 @@
+10
+
+dir
+46
+svn+ssh://svnrepos@paris.eecs.umich.edu/nistrepos/nistcommon/senstore/clients/java
+svn+ssh://svnrepos@paris.eecs.umich.edu/nistrepos/nistcommon
+
+
+
+2011-02-03T20:51:37.783500Z
+38
+jsteinbe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df580e07-4efc-472b-9e5a-37e840e95235
+
+branches
+dir
+
+tags
+dir
+
+trunk
+dir
+

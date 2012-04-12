@@ -1,0 +1,283 @@
+\documentclass[twocolumn]{article}
+
+\begin{document}
+
+\title{ModelDoc}
+\author{Jim Steinberger\\
+  College of Engineering\\
+  University of Michigan\\
+  \texttt{jsteinbe@eecs.umich.edu}
+  \and
+  Atul Prakash\\
+  College of Engineering\\
+  University of Michigan\\
+  \texttt{aprakash@eecs.umich.edu}}
+\maketitle
+
+\begin{abstract}
+
+Software documentation is often lacking in quality and/or completeness.  Even
+good documentation can quickly become bad documentation as the application
+changes but its developers do not keep the documentation in synch.  ModelDoc is
+an attempt to overcome this issue for the data-model of an application.
+ModelDoc is a wiki-based solution which queries and monitors the
+data-definition of an application, and updates itself -- and the relevent
+actors in the software development process -- with those changes.
+
+\end{abstract}
+
+\section{Intruduction}
+
+ModelDoc is wiki-based software which overcomes some of the challenges to
+maintaining accurate documentation.  It focuses on documenting the model of an
+application.
+
+\subsection{Application Model}
+
+The model of an application is the application's functional core, or domain
+logic.  This is where the key entities of the application are defined, such as
+Person or Account.  This is also where the entities are related to each other
+-- the model would define, for example, how many Accounts a Person may have,
+and whether an Account may be shared by multiple People.  The model further
+includes the basic behavior of the entities.  If the passwords for Accounts
+must be MD5 encrypted during authentication, that would go into the model.
+
+\subsection{Software Documentation Challenges}
+
+(TODO Skill of devs in writing documentation, time, lack of holistic view of
+apps)
+
+Unfortunately, good initial documentation is merely the beginning of the
+process.  Software is constantly updated and changed, and the documentation
+needs to be updated to reflect these changes.  Outdated documentation is often
+worse than a lack of documentation, as bad assumptions about the behavior of
+code can result in more wasted time than merely forcing a developer to derive
+code's behavior from the code itself.
+
+(TODO Unique challenges in open source projects - geographically separated
+devs, documentation isn't exciting \& OS is often a hobby)
+
+\subsection{Limitations of Other Approaches}
+
+Other popular documentation generators exist, but these focus primarily on
+documenting source code rather than a data model
+
+(TODO explain the difference)
+ 
+Also, the generated documentation is essentially read-only
+(TODO explain why this is true)
+
+\subsubsection{Source Code Documentation}
+
+Documentation generators such as Doxygen
+(http://www.stack.nl/~dimitri/doxygen/) and JavaDoc
+(http://java.sun.com/j2se/javadoc/) consume the static-structure of source code
+along with annotated comments, and produce human-readable output in the form of
+HTML or PDF.
+
+The developers, however, are still fully responsible for keeping these
+annotated comments in-synch with the code they are attached to.  Whenever
+developers make a change to a function, for example, they must re-read the
+attached comment and manually verify that it is still relevant and accurate. 
+The chances of a developer not having the time -- or the inclination -- to do
+this are great.
+
+Another issue with these solutions is that the documentation they generate is
+difficult to update.  If there is an error with the documentation, the
+annotated comments in the source code need to be updated, and the
+documentation-tool re-run in order to regenerate the full suite of
+documentation.  Not only does this provide a barrier for developers to keep
+documentation up-to-date, but it also precludes end-users from adding their own
+thoughts and ideas.  While a developer may be required to discuss the technical
+aspects of how an entity works, it is often the end-user who may provide the
+best insight into how the entity relates to the real-world and to other
+entities.
+
+\subsubsection{Database Design Documents and UML}
+
+Database design documents and UML diagrams may also be used to describe
+application models.  These usually involve the developer laying out a 2D
+graph of the application, with annotations and arrows indicating the
+properties and relationships of the entities.
+
+Database design documents (DDDs) document the database tables directly.  Two
+popular software packages for DDDs are Visio
+(http://office.microsoft.com/en-us/visio/default.aspx) and MySQL Workbench
+(http://wb.mysql.com/), both of which may be used to create ER diagrams for a
+database.
+
+A static DDD suffers from the same maintenance issues that source-code
+documentation generators do.  Whenever a change is made to a database table,
+the developer must remember -- and take the time -- to go into the DDD software
+package and update the relevant documentation.  Since there is an aesthetic
+element to laying out this graph, this process can be quite tedious.
+
+DDD packages have attempted to overcome this obstacle by connecting to the
+source-database and synching the metadata automatically, similar to ModelDoc's
+approach.  One limitation of this, however, is that a visual layout requires
+human subjectivity -- an Address table, for example, can be heavily
+inter-linked between many different entities, but may not itself be
+particularly important or prominent in the application -- and so the
+developer is often forced to nonetheless spend time manually rearranging the
+entities.
+
+Dynamic DDDs also assume that only the current view of the application model is
+important; for previous versions of the model, a developer would need to
+consult version-control on the creation-scripts, which can be tedious.
+
+DDDs and UML diagrams, while offering a good view of how entities are
+interlated, both lack effective ways to document the entities themselves; there
+is simply not enough room in these diagrams to include it.  Some software
+packages allow users to ``drill-into'' certain nodes in order to access a
+textual description of the entity, but this text is so hidden, and so many
+steps-removed from the entities they describe, they are rarely kept up-to-date.
+
+\section{ModelDoc}
+
+ModelDoc combines what MediaWiki already does with extensions in order to
+overcome the limitations of other documentation approaches.  ModelDoc currently
+addresses the application model specifically, but features extension points so
+that it could conceivably be expanded to documenting other areas as well.
+
+\begin{figure}
+\centering
+\epsfig{file=Untitled.eps}
+\caption{Architectural Overview}
+\end{figure}
+
+\subsection{Data Sources}
+
+In ModelDoc, a data source represents a resource which contributes information
+about the model of an application.  ModelDoc queries these data sources for
+information about the entities, and then monitors them for changes to those
+entities.
+
+ModelDoc currently supports live Postgres and MySQL data sources, but there are
+extension points for supporting other data sources as well, such as flat files
+(SQL and XML) or even other Wiki pages.
+
+Each data source may contribute its own set of entities.  Currently these
+entities are each considered sovereign, but once metadata has been introduced,
+an entity could be formed from multiple database tables.
+
+Consider a ``Person'' entity, for example.  In a properly-normalized database,
+chances are that the information that constitutes a ``Person'' will be spread
+out over multiple tables, such as an ``Address'' table.
+
+(TODO Literature survey on inferring these entities)
+
+\subsection{Versioning}
+
+For each entity, ModelDoc automatically generates a companion read-only page
+which maintains the entity's history.  This companion page maintains XML-based
+metadata on the entity.
+
+Whenever an entity is viewed, the metadata from its version page is compared to
+the current information from the data source itself.  If there are differences
+between the two, the version-page is updated to reflect the current state of
+the model.
+
+Because ModelDoc is based on MediaWiki, the architecture natively supports a
+publish-subscribe mechanism when pages are updated.  That is, when a page is
+updated, a list of people ``watching'' that page can optionally be e-mailed
+about the change.  The relevant developers, then, can be auto-subscribed to the
+version-page for the entities they work with, and whenever a change is
+detected, those developers may be e-mailed about the change and compelled (TODO
+change compelled) to offer a human-readable description of the change.
+
+\subsection{Special Pages}
+
+There is a ``todo''-list for developers, listing all the content which has been
+changed in the model between now and the last time it was examined by a
+developer.  This serves to help avoid documentation becoming stale because a
+developer changed code while forgetting to look at the accompanying comments.
+
+\subsection{Plugin Architecture}
+
+ModelDoc features a plugin architecture to allow for easy extension.  To
+utilize a new data source, for example, one need only create a new
+implementation of the data source API and plug that in.
+
+The immediate use case for this is getting ModelDoc to work with databases that
+are not currently supported.  There is no standard way of accessing metadata in
+database management systems, and so each DBMS requires an adapter in ModelDoc
+in order to present a consistent interface.
+
+However, this plugin architecture may also be used to create abstractions on
+top of data sources.  For example, as previously discussed, an application
+may not have a simple ``table = entity" design.  The components of a Person
+entity, for example, may be normalized over several tables.  In turn, these
+tables may not be located in the same data source.  Perhaps some components are
+in a Postgres database, while other components are in a MySQL database located
+elsewhere.  A custom data source coupled with some metadata could provide a way
+to relate datasources together and document distributed entities.
+
+\section{Performance}
+
+\subsection{Asymptotic Analysis of Versioning Algorithms}
+
+\subsection{Empirical Comparison to Static Pages}
+
+\section{Future Work}
+
+\subsection{Better Visualization}
+
+ModelDoc, being wiki-based, offers a web-flavored view of an application's
+model.  To see how two entities are inter-related, users can examine the
+hyperlinks between the two.  This can offer a very limited window, however,
+when an application's entity-relationships make up a complex graph.
+
+ModelDoc may be extended to incorporate better ways to understand and work with
+the data.  For example, graph-visualization software, such as Graphviz
+(http://www.graphviz.org/Documentation.php) could be incorporated to
+better-indicate where an entity fits in the larger scheme.
+
+Such visualization could in turn be extended to offer better navigational
+options, i.e. where the graph itself can be browsed in lieu of hyperlinks.
+
+\subsection{Flat Files}
+
+Instead of requiring a live running database, ModelDoc could be extended to use
+flat files, such as the master SQL file used to create the database.
+
+Using flat files could preclude technical difficulties with exposing a database
+to the wiki.  For example, the DBA might not be keen to allow ModelDoc to use a
+DB user account which can query schema details.  Also, ModelDoc needs to be
+able to access the database from a network standpoint, which can create
+firewall and other infrastrucure issues, especially if the wiki and the
+database live on different servers.
+
+Further, flat files could be updated separate from the live database, allowing
+the database to be documented before a live rollout.
+
+This approach could also be the least-invasive to the host-server: if a special
+wiki page is used vs. uploaded files, there would be no impact beyond the
+wiki itself.
+
+Finally, using flat files could be an easier alternative to creating a custom
+data source when dealing with application models which are spread out over
+multiple databases.
+
+A challenge with using flat files is that one loses the guarantee that the
+generated documentation is in synch with what has been deployed.
+
+\subsection{High-Level Model Descriptions}
+
+Application models are not simply database tables.  Most applications contain
+an object model which abstracts on top of the data model.  For example, as
+previously discussed, in a database a Person entity and its associated Address
+may be normalized into two tables.  In the object-oriented application,
+however, this relationship would take the form of a Person object composed with
+an Address object.
+
+While a DBA may be more interested in the database-view of the model, the
+application developers (and pershaps the end-users as well) could stand to
+benefit more from documentation at the object-abstraction level.
+
+ModelDoc, then, could be extended to document models at the source code level,
+similar to Doxygen and JavaDoc solutions -- in fact, these other approaches
+could likely simply be integrated.  By further incorporating version-control
+and IDE support, this could become a very powerful tool for documenting source
+code.
+
+\end{document}
